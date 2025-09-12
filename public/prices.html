@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Market Prices</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Market Prices</h1>
+
+  <input type="text" id="cropName" placeholder="Enter Crop Name">
+  <button onclick="getPrices()">Get Prices</button>
+
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Crop</th>
+        <th>Market</th>
+        <th>Price (₹/kg)</th>
+        <th>Last Updated</th>
+      </tr>
+    </thead>
+    <tbody id="priceTable"></tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>

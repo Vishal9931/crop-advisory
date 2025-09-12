@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Farmer Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Farmer Registration</h1>
+  <form id="registerForm">
+    <input type="text" id="name" placeholder="Full Name" required><br>
+    <input type="text" id="phone" placeholder="Phone Number" required><br>
+    <input type="text" id="location" placeholder="Location (City/Village)" required><br>
+    <select id="soil_type">
+      <option value="sandy">Sandy</option>
+      <option value="loamy">Loamy</option>
+      <option value="clay">Clay</option>
+    </select><br>
+    <input type="number" id="land_size" placeholder="Land Size (acres)" required><br>
+    <input type="date" id="sowing_date" required><br>
+    <button type="submit">Register</button>
+  </form>
+
+  <p id="result"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>

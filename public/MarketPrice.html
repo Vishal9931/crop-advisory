@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Market Prices - Smart Crop Advisory</title>
+  <link rel="stylesheet" href="MarketPrice.css">
+  <link rel="icon" href="GreenHarvest_Logo.png">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    💰 Market Prices
+  </header>
+
+  <div class="container">
+    <!-- Mandi Prices -->
+    <div class="card">
+      <h3>📊 Nearest Mandi Prices</h3>
+      <table>
+        <tr>
+          <th>Crop</th>
+          <th>Mandi</th>
+          <th>Price (₹/Quintal)</th>
+          <th>Date</th>
+        </tr>
+        <tr>
+          <td>Wheat</td>
+          <td>Kanpur</td>
+          <td>₹2200</td>
+          <td>10 Sept 2025</td>
+        </tr>
+        <tr>
+          <td>Mustard</td>
+          <td>Lucknow</td>
+          <td>₹5100</td>
+          <td>10 Sept 2025</td>
+        </tr>
+        <tr>
+          <td>Chickpea</td>
+          <td>Varanasi</td>
+          <td>₹4400</td>
+          <td>10 Sept 2025</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Price Trend Graph -->
+    <!-- <div class="card">
+      <h3>📈 Wheat Price Trend</h3>
+      <canvas id="priceChart"></canvas>
+    </div> -->
+
+    <!-- Profitability Calculator -->
+    <div class="card">
+      <h3>💹 Profitability Calculator</h3>
+      <div class="profit-box">
+        <input type="number" id="cost" placeholder="Enter total cost (₹)" />
+        <input type="number" id="yield" placeholder="Enter expected yield (quintals)" />
+        <input type="number" id="price" placeholder="Enter expected price per quintal (₹)" />
+        <button class="btn" onclick="calculateProfit()">Calculate Profit</button>
+        <p id="result" style="margin-top:10px;font-weight:bold;"></p>
+      </div>
+    </div>
+
+    <!-- Back Button -->
+    <a href="dashboard.html" class="back-btn">⬅ Back to Dashboard</a>
+  </div>
+
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="MarketPrice.js"></script>
+</body>
+</html>

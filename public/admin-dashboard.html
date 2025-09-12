@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Dashboard - Smart Crop Advisory</title>
+  <link rel="icon" href="GreenHarvest_Logo.png">
+  <link rel="stylesheet" href="Admin_Dashboard.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    ⚙️ Admin Dashboard 
+    <button class="menu-toggle" onclick="toggleSidebar()">☰ Menu</button>
+  </header>
+
+  <!-- Overlay for mobile -->
+  <div class="overlay" id="overlay" onclick="toggleSidebar()"></div>
+
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+      <h3>Navigation</h3>
+      <a href="#farmers">👨‍🌾 Farmers</a>
+      <a href="#crops">🌱 Crops</a>
+      <a href="#alerts">📢 Alerts</a>
+      <a href="#prices">💰 Market Prices</a>
+      <a href="#reports">📊 Reports</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+      <!-- Farmers Section -->
+      <div class="card" id="farmers">
+        <h2>👨‍🌾 Registered Farmers</h2>
+        <table>
+          <tr><th>ID</th><th>Name</th><th>Location</th><th>Soil Type</th><th>Land (acres)</th></tr>
+          <tr><td>F001</td><td>Ramesh Kumar</td><td>Kanpur</td><td>Alluvial</td><td>2</td></tr>
+          <tr><td>F002</td><td>Sunita Devi</td><td>Lucknow</td><td>Black Soil</td><td>3</td></tr>
+        </table>
+      </div>
+
+      <!-- Crops Section -->
+      <div class="card" id="crops">
+        <h2>🌱 Manage Crops</h2>
+        <table>
+          <tr><th>Crop</th><th>Soil Type</th><th>Duration (days)</th><th>Action</th></tr>
+          <tr><td>Wheat</td><td>Alluvial</td><td>120</td><td><button class="btn">Edit</button></td></tr>
+          <tr><td>Mustard</td><td>Black Soil</td><td>90</td><td><button class="btn">Edit</button></td></tr>
+        </table>
+      </div>
+
+      <!-- Alerts Section -->
+      <div class="card" id="alerts">
+        <h2>📢 Alerts Management</h2>
+        <input type="text" id="newAlert" placeholder="Enter new alert..." style="width:70%; padding:8px; border-radius:6px; border:1px solid #ccc;">
+        <button class="btn" onclick="addAlert()">➕ Add Alert</button>
+        <ul id="alertList">
+          <li>🌧️ Rain Alert - Delay pesticide spray</li>
+          <li>💧 Irrigation reminder for Wheat (Day 15)</li>
+        </ul>
+      </div>
+
+      <!-- Market Prices Section -->
+      <div class="card" id="prices">
+        <h2>💰 Update Market Prices</h2>
+        <table id="priceTable">
+          <tr><th>Crop</th><th>Mandi</th><th>Price (₹/Quintal)</th><th>Date</th></tr>
+          <tr><td>Wheat</td><td>Kanpur</td><td>₹2200</td><td>10 Sept 2025</td></tr>
+        </table>
+        <br>
+        <input type="text" id="crop" placeholder="Crop" />
+        <input type="text" id="mandi" placeholder="Mandi" />
+        <input type="number" id="price" placeholder="Price (₹)" />
+        <button class="btn" onclick="updatePrice()">Update Prices</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="Admin_Dashboard.js"></script>
+</body>
+</html>

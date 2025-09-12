@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather & Pest Alerts</title>
+  <link rel="stylesheet" href="alerts.css">
+  <link rel="icon" href="GreenHarvest_Logo.png">
+</head>
+<body>
+  <header>
+    <h1>Alerts & Notifications</h1>
+    <p>Stay updated with latest weather & pest advisories</p>
+  </header>
+
+  <main class="container">
+    <!-- Search and Add -->
+    <div class="top-actions">
+      <input type="text" id="search" placeholder="Search alerts (e.g. rain, pest, armyworm)...">
+      <button onclick="addAlert()">➕ Add Alert</button>
+    </div>
+
+    <!-- Alerts Grid -->
+    <div class="grid" id="alertsGrid">
+      <div class="alert weather">
+        <span class="close-btn" onclick="removeAlert(this)">✖</span>
+        <h2>🌦️ Weather Alert: Heavy Rainfall</h2>
+        <p>Heavy rainfall expected in northern regions over the next 48 hours. Farmers are advised to protect their harvested crops and ensure proper drainage in fields.</p>
+        <p><strong>Issued on:</strong> 09 Sep 2025</p>
+      </div>
+
+      <div class="alert pest">
+        <span class="close-btn" onclick="removeAlert(this)">✖</span>
+        <h2>🐛 Pest Warning: Locust Attack Risk</h2>
+        <p>High chances of locust movement in western districts. Farmers should stay alert and use recommended pesticides for crop safety.</p>
+        <p><strong>Issued on:</strong> 09 Sep 2025</p>
+      </div>
+
+      <div class="alert weather">
+        <span class="close-btn" onclick="removeAlert(this)">✖</span>
+        <h2>⚡ Weather Alert: Thunderstorm</h2>
+        <p>Thunderstorms with lightning likely in southern areas. Avoid working in open fields and take shelter during heavy lightning activity.</p>
+        <p><strong>Issued on:</strong> 10 Sep 2025</p>
+      </div>
+
+      <div class="alert pest">
+        <span class="close-btn" onclick="removeAlert(this)">✖</span>
+        <h2>🦟 Pest Warning: Fall Armyworm</h2>
+        <p>Fall Armyworm detected in maize fields. Immediate pest management measures are recommended to prevent crop loss.</p>
+        <p><strong>Issued on:</strong> 10 Sep 2025</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- <footer>
+    © 2025 AgriAlert System · Demo Page for Farmers
+  </footer> -->
+
+  <script src="alerts.js"></script>
+</body>
+</html>

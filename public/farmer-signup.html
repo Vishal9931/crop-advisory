@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Signup</title>
+  <link rel="stylesheet" href="farmer-signup.css">
+</head>
+
+<body>
+  <div class="register-container">
+    <div class="logo">
+      <img src="GreenHarvest_logo.png" alt="Logo">
+    </div>
+    <h2>📝 Farmer Sign Up</h2>
+
+    <form id="farmerForm">
+      <label for="name">Full Name</label>
+      <input type="text" id="farmerName" class="input-box" placeholder="Enter your name" required>
+
+      <label for="name">Phone</label>
+      <input id="farmerPhone" class="input-box" type="text" id="farmerPhone" placeholder="Phone" required>
+      <label for="name">Password</label>
+      <input id="farmerPassword" class="input-box" type="password" id="farmerPassword" placeholder="Password" required>
+      <label for="name">Location</label>
+      <input id="farmerLocation" class="input-box" type="text" id="farmerLocation" placeholder="Location" required>
+      <label for="name">Land Size (acres)</label>
+      <input id="farmerLand" class="input-box" type="number" id="farmerLand" placeholder="Land Size (acres)" required><br>
+      <button class="btn btn-submit" type="submit">Signup</button>
+    </form>
+
+    <!-- <h2>Admin Signup</h2>
+  <form id="adminSignupForm">
+    <input type="text" id="adminUsername" placeholder="Username" required><br>
+    <input type="password" id="adminPassword" placeholder="Password" required><br>
+    <button type="submit">Signup</button>
+  </form> -->
+
+    <p id="signupResult"></p>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

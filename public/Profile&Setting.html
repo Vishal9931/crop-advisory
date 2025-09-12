@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Profile & Settings - Smart Crop Advisory</title>
+  <link rel="stylesheet" href="Profile&Setting.css">
+  <link rel="icon" href="GreenHarvest_Logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <p>⚙️ Profile & Settings</p>
+
+  <a href="#" id="logout">Logout <i class="fa-solid fa-right-from-bracket"></i></a>
+  </header>
+
+  <div class="container">
+    <!-- Farmer Profile -->
+    <div class="card">
+      <h3>👨‍🌾 Farmer Profile</h3>
+      <form id="profileForm">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" value="Ramesh Kumar" />
+
+        <label for="location">Location</label>
+        <input type="text" id="location" value="Kanpur, UP" />
+
+        <label for="soil">Soil Type</label>
+        <select id="soil">
+          <option>Alluvial</option>
+          <option selected>Black (Regur)</option>
+          <option>Red</option>
+          <option>Laterite</option>
+          <option>Arid/Desert</option>
+        </select>
+
+        <label for="land">Land Size (in acres)</label>
+        <input type="number" id="land" value="2" />
+      </form>
+    </div>
+
+    <!-- Language Settings -->
+    <div class="card">
+      <h3>🌐 Language Settings</h3>
+      <select id="language">
+        <option selected>English</option>
+        <option>हिन्दी</option>
+        <option>मराठी</option>
+        <option>தமிழ்</option>
+        <option>తెలుగు</option>
+      </select>
+    </div>
+
+    <!-- Notification Preferences -->
+    <div class="card">
+      <h3>🔔 Notification Preferences</h3>
+      <div class="checkbox">
+        <input type="checkbox" id="push" checked />
+        <label for="push">Enable Push Notifications</label>
+      </div>
+      <div class="checkbox">
+        <input type="checkbox" id="sms" />
+        <label for="sms">Enable SMS Alerts</label>
+      </div>
+    </div>
+
+    <!-- Save Button -->
+    <button class="btn" onclick="saveSettings()">💾 Save Settings</button>
+
+    <!-- Back Button -->
+    <a href="dashboard.html" class="back-btn">⬅ Back to Dashboard</a>
+  </div>
+
+  <script src="Profile&Setting.js"></script>
+</body>
+</html>

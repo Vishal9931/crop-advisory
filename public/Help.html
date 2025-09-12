@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Community Help - Smart Crop Advisory</title>
+  <link rel="stylesheet" href="Help.css">
+  <link rel="icon" href="GreenHarvest_Logo.png">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    👨‍👩‍👦 Community Help
+  </header>
+
+  <div class="container">
+    <!-- Post Question Section -->
+    <div class="card">
+      <h3>📝 Ask a Question</h3>
+      <form id="questionForm">
+        <textarea id="questionText" placeholder="Type your question..." required></textarea>
+        <input type="file" id="questionImage" accept="image/*" />
+        <button type="button" class="btn" onclick="postQuestion()">Post Question</button>
+      </form>
+    </div>
+
+    <!-- Recent Posts -->
+    <div class="card">
+      <h3>📋 Recent Questions</h3>
+      <div id="posts">
+        <!-- Example Post -->
+        <div class="post">
+          <h4>👨‍🌾 Ramesh Kumar</h4>
+          <p>My wheat leaves are turning yellow. What should I do?</p>
+          <div class="reply">💡 Expert: Apply Urea 50kg/acre and ensure proper irrigation.</div>
+        </div>
+        <div class="post">
+          <h4>👩‍🌾 Sunita Devi</h4>
+          <p>When is the best time to sow mustard crop?</p>
+          <div class="reply">💡 Expert: Best sowing period is mid-October to early November.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Back Button -->
+    <a href="dashboard.html" class="back-btn">⬅ Back to Dashboard</a>
+  </div>
+
+  <script src="Help.js"></script>
+</body>
+</html>

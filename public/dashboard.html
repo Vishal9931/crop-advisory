@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Farmer Dashboard - Smart Crop Advisory</title>
+  <link rel="icon" href="GreenHarvest_Logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="farmer-dashboard.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="logo">
+      <a href="dashboard.html"><img src="GreenHarvest2logo.png" alt="Logo"></a>
+      <!-- <h2>Farmer Dashboard</h2> -->
+    </div>
+    <ul id="menu">
+      <li><a href="Farmer_Dashboard.html" class="active">Dashboard</a></li>
+      <li><a href="#crops">My Crops</a></li>
+      <li><a href="#weather">Weather</a></li>
+      <li><a href="#tasks">Tasks</a></li>
+      <li><a href="Profile&Setting.html">Profile</a></li>
+    </ul>
+    <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+  </nav>
+
+  <!-- ===== MAIN DASHBOARD ===== -->
+  <div class="container">
+    <!-- Farmer Welcome -->
+    <div class="card">
+      <h3>👋 Welcome, Ramesh Kumar</h3>
+      <p>Here is your personalized crop advisory.</p>
+    </div>
+
+    <!-- Recommended Crops -->
+    <div class="card" id="crops">
+      <h3>🌱 Recommended Crops</h3>
+      <div class="recommended-crops">
+        <span>Wheat</span>
+        <span>Mustard</span>
+        <span>Chickpea</span>
+      </div>
+    </div>
+
+    <!-- Weather Section -->
+    <div class="card" id="weather">
+      <h3>☁️ Current Weather</h3>
+      <div class="weather-box">
+        <div>
+          <h4>25°C</h4>
+          <p>Temperature</p>
+        </div>
+        <div>
+          <h4>70%</h4>
+          <p>Humidity</p>
+        </div>
+        <div>
+          <h4>🌧️ Rain Expected</h4>
+          <p>Advisory</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Upcoming Tasks -->
+    <div class="card" id="tasks">
+      <h3>📌 Upcoming Tasks</h3>
+      <ul class="tasks">
+        <li>Tomorrow → Irrigate 2 hours</li>
+        <li>Day 5 → Apply Urea (50kg/acre)</li>
+        <li>Day 10 → Pest control spray</li>
+      </ul>
+    </div>
+
+    <!-- Navigation Buttons -->
+    <div class="card">
+      <h3>⚡ Quick Access</h3>
+      <div class="nav-buttons">
+        <button onclick="goTo('CropGuide.html')">📋 Crop Guide</button>
+        <button onclick="goTo('alerts.html')">📢 Alerts</button>
+        <button onclick="goTo('MarketPrice.html')">💰 Market Prices</button>
+        <button onclick="goTo('Help.html')">👨‍👩‍👦 Community</button>
+        <button onclick="goTo('Profile&Setting.html')">⚙️ Profile</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-container">
+      <div>
+        <h3>GreenHarvest</h3>
+        <p>Empowering farmers with technology & insights.</p>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="Farmer_Dashboard.html">Dashboard</a></li>
+          <li><a href="#crops">My Crops</a></li>
+          <li><a href="#market">Market</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2025 GreenHarvest. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ===== JS ===== -->
+  <script src="Farmer_Dashboard.js"></script>
+</body>
+</html>
