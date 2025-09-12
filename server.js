@@ -3,10 +3,19 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const db = require('./database');
 const bcrypt = require('bcrypt');
+const path = require("path");
 
 const app = express();
 app.use(bodyParser.json());
 app.use(cors());
+
+// Serve static files from "public" folder
+app.use(express.static(path.join(__dirname, "public")));
+
+// Default route → load index.html
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "index.html"));
+});
 
 const axios = require('axios');
 const WEATHER_API_KEY = 'e4237374d7b5ea00aa08ab9ff38c67c0'; // replace with your key
